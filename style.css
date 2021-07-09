@@ -122,6 +122,8 @@ input[type="text"]:focus {
 }
 #missed,
 #matched,
-#empty {
+#empty,
+#alert {
   display: none;
+  font-size: 20px;
 }
