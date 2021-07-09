@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pin Generator</title>
+    <!-- <link
+        rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="notify-section">
+      <p class="notify" id="missed">❌ Pin Didn't Match, Please try again</p>
+      <p class="notify" id="matched">✅ Pin Matched...Welcome</p>
+      <p class="notify" id="empty">Please input pin</p>
+    </div>
+    <div class="container">
+      <div class="col-md-6 pin-maker">
+        <div class="pin-generator half-width">
+          <input
+            class="form-control input-value"
+            type="text"
+            placeholder="Click generate button for pin"
+          />
+          <button class="generate-btn">Generate</button>
+        </div>
+      </div>
+      <div class="col-md-6 numpad">
+        <div class="input-section half-width">
+          <form action="" name="number">
+            <input
+              type="text"
+              name="screen"
+              id="input-screen"
+              placeholder="input here your pin"
+              disabled
+            />
+
+            <input
+              type="button"
+              class="button"
+              value="7"
+              onclick="number.screen.value+='7'"
+            />
+            <input
+              type="button"
+              class="button"
+              value="8"
+              onclick="number.screen.value+='8'"
+            />
+            <input
+              type="button"
+              class="button"
+              value="9"
+              onclick="number.screen.value+='9'"
+            /><br />
+            <input
+              type="button"
+              class="button"
+              value="4"
+              onclick="number.screen.value+='4'"
+            />
+            <input
+              type="button"
+              class="button"
+              value="5"
+              onclick="number.screen.value+='5'"
+            />
+            <input
+              type="button"
+              class="button"
+              value="6"
+              onclick="number.screen.value+='6'"
+            /><br />
+            <input
+              type="button"
+              class="button"
+              value="1"
+              onclick="number.screen.value+='1'"
+            />
+            <input
+              type="button"
+              class="button"
+              value="2"
+              onclick="number.screen.value+='2'"
+            />
+            <input
+              type="button"
+              class="button"
+              value="3"
+              onclick="number.screen.value+='3'"
+            /><br />
+            <input
+              type="button"
+              class="button"
+              value="0"
+              onclick="number.screen.value+='0'"
+            />
+            <input
+              type="button"
+              class="button"
+              value="C"
+              onclick="number.screen.value=' '"
+            />
+            <input
+              type="button"
+              class="button"
+              value="&larr;"
+              onclick="number.screen.value=number.screen.value.slice(0,-1)"
+            />
+            <br />
+            <input type="button" class="button submit-btn" value="submit" />
+            <br />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
